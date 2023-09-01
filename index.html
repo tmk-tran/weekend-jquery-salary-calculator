@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/client.js"></script>
     <script src="vendor/jquery.js"></script>
+    <script src="js/client.js"></script>
+    
     <title>Weekend Salary Calculator</title>
 </head>
 <body>
@@ -22,13 +23,14 @@
          <input type="text" placeholder="Annual Salary" id="annualSalary" required />
 
        
-         <button id="addCohort">Add Employee</button>
+         <button id="addEmployee">Add Employee</button>
+         <button id="deleteEmployee">Delete Employee</button>
       </section>
 
       <section>
          <h2>Monthly Costs</h2>
          <h3>Fill me in <span id="totalStudents">0</span>total monthly costs</h3>
-         <ul id="cohorts"></ul>
+         <ul id="employee"></ul>
       </section>
 
       <footer>&copy;Footer</footer>
