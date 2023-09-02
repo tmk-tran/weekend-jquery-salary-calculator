@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         // Add employee to the list
         var employeeInfo = firstName + " " + lastName + " (ID: " + id + ", Title: " + title + ")";
-        $("#cohorts").append("<li>" + employeeInfo + ": $" + monthlyCost.toFixed(2) + " per month</li>");
+        $("#employees").append("<li>" + employeeInfo + ": $" + monthlyCost.toFixed(2) + " per month</li>");
 
         // Update total monthly cost
         totalMonthlyCost += monthlyCost;
