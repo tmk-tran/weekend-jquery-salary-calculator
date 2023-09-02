@@ -34,19 +34,19 @@ function onReady() {
               </tr>
               <tr>
                  <td><strong>ID:</strong></td>
-                 <td>$${id}</td>
+                 <td>${id}</td>
               </tr>
               <tr>
                  <td><strong>Title:</strong></td>
-                 <td>$${title}</td>
+                 <td>${title}</td>
               </tr>
               <tr>
                  <td><strong>Salary:</strong></td>
-                 <td>$${annualSalary.toFixed(2)}</td>
+                 <td>${annualSalary.toFixed(2)}</td>
               </tr>
               <tr>
                  <td><strong>Monthly Cost:</strong></td>
-                 <td>$${monthlyCost.toFixed(2)}</td>
+                 <td>${monthlyCost.toFixed(2)}</td>
               </tr>
            </tbody>
         </table>
