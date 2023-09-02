@@ -28,10 +28,17 @@ ul {
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
+   border: solid black;
+   padding: 10px;
+   
 }
 
 .submit button {
-   margin-left: 10px;
+   display: flex;
+   justify-content: flex-end;
+   border: solid black;
+   padding: 10px;
+   margin-top: 10px;
 }
 
 ul#employees .employee table { /* specifically targets <li> items under the ul with the ID employees */
