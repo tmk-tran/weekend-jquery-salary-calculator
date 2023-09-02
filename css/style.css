@@ -1,10 +1,37 @@
 body{
     background-color:gray;
+    background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png);
+    background-size: 100% auto; /* fills screen and maintains ratio */
+    background-repeat: no-repeat; /* stop repeat */
     color: black;
+    min-width: 200px;
+}
+
+h1 {
+   background-color: ghostwhite;
+   text-align: center;
+   width: 75%;
+   margin: 0 auto;
+   min-width: 200px;   
+}
+
+h2 {
+   text-align: right;
 }
 
 ul {
    padding: 0;
+}
+
+.input {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.submit button {
+   margin-left: 10px;
 }
 
 ul#employees .employee table { /* specifically targets <li> items under the ul with the ID employees */

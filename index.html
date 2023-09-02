@@ -14,21 +14,23 @@
       <header>
          <h1>Salary Calculator</h1>
       </header>
-      <section>
          <h2>Add New Employee</h2>
+
+      <section class="input">   
          <input type="text" placeholder="First Name" id="firstName" required />
          <input type="text" placeholder="Last Name" id="lastName" required />
          <input type="text" placeholder="ID" id="id" required />
          <input type="text" placeholder="Title" id="title" required />
          <input type="text" placeholder="Annual Salary" id="annualSalary" required />
+      </section>
 
-       
+      ,<section class="submit"> 
          <button id="addEmployee">Submit</button>
       </section>
 
       <section>
-         <h2>Monthly Costs</h2>
-         <h3>Total Monthly Costs: <span id="totalCosts">$0</span></h3>
+         <h3>Monthly Costs</h3>
+         <h4>Total Monthly Costs: <span id="totalCosts">$0</span></h4>
          <ul id="employees"></ul>
       </section>
 
