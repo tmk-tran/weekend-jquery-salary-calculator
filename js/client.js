@@ -16,7 +16,7 @@ function onReady() {
     const title = $("#title").val();
     const annualSalary = parseFloat($("#annualSalary").val());
 
-    if (
+    if ( // conditions for input fields
       !firstName ||
       !lastName ||
       !id ||
@@ -31,7 +31,7 @@ function onReady() {
     const monthlyCost = annualSalary / 12;
     monthlyCosts += monthlyCost;
 
-    // inserted data-salary below to reference employee that was deleted, 
+    // inserted data-salary below in <li class="employee">to reference employee that was deleted, 
     // and set value back to 0 in DOM
     $("#employees").append(`
             <li class="employee" data-salary="${annualSalary}"> 
@@ -67,7 +67,7 @@ function onReady() {
   });
 
   // Delete button event handlers
-  $('#employees').on('click', '.delete', function () { // which elements inside #employees should trigger the event handler when clicked
+  $('#employees').on('click', '.delete', function () { // the elements inside #employees should trigger the event handler when clicked
       
       const $employee = $(this).closest('.employee'); // find the closest ancestor element with the class 'employee'
 
@@ -82,7 +82,7 @@ function onReady() {
       updateCosts(); // update our monthlyCosts
   });
 
-  // Update monthly cost total
+  // Update monthlyCosts total
   function updateCosts() {
     console.log("in updateCosts");
     $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID totalCosts, fix to 2 decimal places
@@ -94,7 +94,7 @@ function onReady() {
     }
   }
 
-  // Clear input fields
+  // Clear the input fields
   function clearFields() {
     $("#firstName").val('');
     $("#lastName").val('');
