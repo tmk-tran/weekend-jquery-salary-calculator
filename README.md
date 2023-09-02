@@ -11,27 +11,24 @@ Add styling or extra functionality that fits with the theme of this assignment.
 Once the employee is deleted, update the Total Monthly Cost section on the page to reflect the employee's removal. HINT: You will need to figure out which employee was removed, in order to subtract their salary from the total. Consider using .text() as a getter, or look into jQuery's .data()function. This is tricky!
 
 ## Functionality
-- [ ] Takes input from the user to create a (name, size)
-    - [ ] employee first name, last name, ID number, job title, annual salary. 
-    - [ ] Wire up button
-    - [ ] Clear
-    - [ ] Alert
-    - [ ] Use a number field
-- [ ] Each employee can be displayed using a ( `<li></li>` )
-- [ ] Show total number of employees
-
-
+- [x] Takes input from the user to create a (name, size)
+    - [x] employee first name, last name, ID number, job title, annual salary. 
+    - [x] Wire up button
+    - [x] Clear
+    - [x] Alert
+    - [x] Use a number field
+- [x] Each employee can be displayed using a ( `<li></li>` )
 
 
 ## TODO
 
-- [ ] Running Total
-- [ ] global array 
-- [ ] clear
-- [ ] append
-- [ ] calculate
-- [ ] return
-- [ ] delete button
+- [x] Running Total
+- [x] global array 
+- [x] clear
+- [x] append
+- [x] calculate
+- [x] return
+- [x] delete button
 
 
    
