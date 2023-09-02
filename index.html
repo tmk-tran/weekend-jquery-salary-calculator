@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="vendor/jquery.js"></script>
-    <script src="js/client.js"></script>
-    
-    <title>Salary Calculator</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="vendor/jquery.js"></script>
+   <script src="js/client.js"></script>
+
+   <title>Salary Calculator</title>
 </head>
+
 <body>
    <main id="form">
       <header>
          <h1>Salary Calculator</h1>
       </header>
-         <h2>Add New Employee</h2>
+      <h2>Add New Employee</h2>
 
       <section>
          <h3>Monthly Costs</h3>
          <h4>Total Monthly Costs: <span id="totalCosts">$0</span></h4>
-         <ul id="employees"></ul>
       </section>
 
-      <section class="input">   
+      <section class="input">
          <input type="text" placeholder="First Name" id="firstName" required />
          <input type="text" placeholder="Last Name" id="lastName" required />
          <input type="text" placeholder="ID" id="id" required />
@@ -30,9 +31,11 @@
          <input type="text" placeholder="Annual Salary" id="annualSalary" required />
       </section>
 
-      <section class="submit"> 
+      <section class="submit">
          <button id="addEmployee">Submit</button>
       </section>
+
+      <ul id="employees"></ul>
 
       <footer></footer>
    </main>
