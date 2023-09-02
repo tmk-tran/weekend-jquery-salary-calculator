@@ -1,71 +1,96 @@
-console.log('Hello World');
-
+console.log("Hello World");
 
 $(onReady); // "new" way to set onReady function
 
-let monthlyCosts = 0; // global 
+let monthlyCosts = 0; // global
 
 function onReady() {
-   console.log( 'in onReady' );
-   // Wire up our click handlers
-   // An add Button
-   $('#addEmployee').on('click', function() {
-      const firstName = $('#firstName').val();
-      const lastName = $('#lastName').val();
-      const id = $('#id').val();
-      const title = $('#title').val();
-      const annualSalary = parseFloat($('#annualSalary').val() );
-      
-      if ( !firstName || !lastName || !id || !title || isNaN(annualSalary) || annualSalary <= 0 ) {
-         alert('Please fill all fields with proper values')
-         return;
-      }
-   
+  console.log("in onReady");
+  // Wire up our click handlers
+  // An add Button
+  $("#addEmployee").on("click", function () {
+    const firstName = $("#firstName").val();
+    const lastName = $("#lastName").val();
+    const id = $("#id").val();
+    const title = $("#title").val();
+    const annualSalary = parseFloat($("#annualSalary").val());
 
-   const monthlyCost = annualSalary / 12;
-   monthlyCosts += monthlyCost;
+    if (
+      !firstName ||
+      !lastName ||
+      !id ||
+      !title ||
+      isNaN(annualSalary) ||
+      annualSalary <= 0
+    ) {
+      alert("Please fill all fields with proper values");
+      return;
+    }
 
-   $('#employees').append(`<li class="employee">
-        <table>
-           <tbody>
-              <tr>
-                 <td><strong>Employee Name:</strong></td>
-                 <td>${firstName} ${lastName}</td>
-              </tr>
-              <tr>
-                 <td><strong>ID:</strong></td>
-                 <td>${id}</td>
-              </tr>
-              <tr>
-                 <td><strong>Title:</strong></td>
-                 <td>${title}</td>
-              </tr>
-              <tr>
-                 <td><strong>Salary:</strong></td>
-                 <td>${annualSalary.toFixed(2)}</td>
-              </tr>
-              <tr>
-                 <td><strong>Monthly Cost:</strong></td>
-                 <td>${monthlyCost.toFixed(2)}</td>
-              </tr>
-           </tbody>
-        </table>
-        <button class="delete">Delete</button>
-     </li>`);
+    const monthlyCost = annualSalary / 12;
+    monthlyCosts += monthlyCost;
 
-   });
-}  
+    $("#employees").append(`
+            <li class="employee">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Employee Name:</strong></td>
+                            <td>${firstName} ${lastName}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ID:</strong></td>
+                            <td>${id}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Title:</strong></td>
+                            <td>${title}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salary:</strong></td>
+                            <td>${annualSalary.toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monthly Cost:</strong></td>
+                            <td>${monthlyCost.toFixed(2)}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="delete">Delete</button>
+            </li>
+        `);
+    updateCosts();
+    clearFields();
+  });
 
-   // Delete Button
-   // $('#deleteEmployee').on('click', deleteEmployee);
-   
+  // Delete Button
+  $('#employees').on('click', 'delete', function () { // targeting ul id 'employees'
 
+  }
 
+  // Update monthly cost total
+  function updateCosts() {
+    console.log("in updateCosts");
+    $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID totalCosts
 
+    if (monthlyCosts > 20000) {
+      $("#totalCosts").addClass("high-cost");
+    } else {
+      $("#totalCosts").removeClass("high-cost");
+    }
+  }
 
+  // Clear input fields
+  function clearFields() {
+    $("#firstName").val("");
+    $("#lastName").val("");
+    $("#id").val("");
+    $("#title").val("");
+    $("#annualSalary").val("");
+  }
+}
 
 // ~~~~~~~~~Extra/ Notes Below~~~~~~~~~~~
-
 
 /*function addEmployee(event) {
    console.log('in add ');
@@ -78,7 +103,7 @@ function onReady() {
 } // take out later
 
    // append to the ul*/
-  /* $('#cohorts').append(`<li class="cohort">
+/* $('#cohorts').append(`<li class="cohort">
       <table>
          <tbody>
             <tr>
