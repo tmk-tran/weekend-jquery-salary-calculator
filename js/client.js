@@ -65,8 +65,23 @@ function onReady() {
 
   // Delete Button
   $('#employees').on('click', 'delete', function () { // targeting ul id 'employees'
+   console.log( 'you clicked delete!' );
+      const $employee = $(this).closest('.employee'); // find the closest ancestor element with the class 'employee'
+      
+      // Find the <td> element containing the text 'Salary:' within the employee element,
+      // then select the next sibling <td> element, which contains the actual salary text
+      const salaryText = $employee.find('td:contains("Salary:")').next().text();
+      
+      const salaryCount = parseFloat(salaryText.slice(1)); // // remove the dollar sign ('$') from the salary text and parse it as a float
 
-  }
+      const monthlyCost = salaryCount / 12; // calculate the monthly cost by dividing the annual salary by 12
+
+      monthlyCosts -= monthlyCost; // subtract the monthly cost of the deleted employee from the total monthly costs
+
+      $('#employees').remove();
+
+      updateCosts();
+  });
 
   // Update monthly cost total
   function updateCosts() {
