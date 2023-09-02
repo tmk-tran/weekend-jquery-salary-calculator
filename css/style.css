@@ -50,10 +50,9 @@ ul {
    display: flex; /* Make the children of .input flex items */
    flex-wrap: nowrap; /* Prevent flex items from wrapping to the next line */
    width: 75%; /* Use 100% width to ensure they stay on the same line */
-   /* margin: 0 auto; */
    padding: 10px;
    min-width: 200px;
-   justify-content: space-between; /* Space evenly between elements */
+   justify-content: flex-start; /* Start from the left edge */
    border: solid black;
    padding: 10px;
    margin: 0 auto;
@@ -68,10 +67,10 @@ ul {
 
 .submit button {
    display: flex;
-   justify-content: flex-end;
    border: solid black;
    padding: 10px;
    margin-top: 10px;
+   margin-left: auto;  /* Push to the right edge */
 }
 
 ul#employees .employee table { /* specifically targets <li> items under the ul with the ID employees */
