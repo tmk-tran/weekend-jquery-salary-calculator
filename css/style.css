@@ -1,13 +1,13 @@
 body{
     background-color: blueviolet;
-    color: white;
+    color: black;
 }
 
 ul {
    padding: 0;
 }
 
-li.cohort {
+ul.employees {
    list-style: none;
    box-sizing: border-box;
    display: inline-block;
@@ -20,9 +20,21 @@ li.cohort {
    padding: 2% 3%;
    border-radius: 5px;
 }
-li.cohort table {
+ul.employees table {
    width: 100%;
 }
-li.cohort td {
+ul.employees td {
    padding: 1%;
+}
+
+#totalCosts {
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 10px;
+   display: inline-block;
+}
+
+.high-cost {
+   background-color: red;
+   color:white;
 }

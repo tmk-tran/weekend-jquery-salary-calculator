@@ -64,7 +64,7 @@ function onReady() {
   });
 
   // Delete Button
-  $('#employees').on('click', 'delete', function () { // targeting ul id 'employees'
+  $('#employees').on('click', '.delete', function () { // which elements inside #employees should trigger the event handler when clicked
    console.log( 'you clicked delete!' );
       const $employee = $(this).closest('.employee'); // find the closest ancestor element with the class 'employee'
       
@@ -78,7 +78,7 @@ function onReady() {
 
       monthlyCosts -= monthlyCost; // subtract the monthly cost of the deleted employee from the total monthly costs
 
-      $('#employees').remove();
+      $employee.remove();
 
       updateCosts();
   });
@@ -97,11 +97,11 @@ function onReady() {
 
   // Clear input fields
   function clearFields() {
-    $("#firstName").val("");
-    $("#lastName").val("");
-    $("#id").val("");
-    $("#title").val("");
-    $("#annualSalary").val("");
+    $("#firstName").val('');
+    $("#lastName").val('');
+    $("#id").val('');
+    $("#title").val('');
+    $("#annualSalary").val('');
   }
 }
 
