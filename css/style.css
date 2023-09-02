@@ -3,6 +3,7 @@ body{
     background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png);
     background-size: 100% auto; /* fills screen and maintains ratio */
     background-repeat: no-repeat; /* stop repeat */
+    /* background color: rgba(255, 255, 255, 0.5); */
     color: black;
     min-width: 200px;
 }
@@ -12,11 +13,33 @@ h1 {
    text-align: center;
    width: 75%;
    margin: 0 auto;
+   padding: 10px;
    min-width: 200px;   
 }
 
 h2 {
    text-align: right;
+   width: 75%;
+   margin: 0 auto;
+   padding: 10px;
+   min-width: 200px;
+   border: solid black;
+}
+
+h3 {
+   width: 75%;
+   margin: 0 auto;
+   padding: 10px;
+   min-width: 200px;
+   border: solid black;
+}
+
+h4 {
+   width: 75%;
+   margin: 0 auto;
+   padding: 10px;
+   min-width: 200px;
+   border: solid black;
 }
 
 ul {
@@ -24,13 +47,23 @@ ul {
 }
 
 .input {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
+   display: flex; /* Make the children of .input flex items */
+   flex-wrap: nowrap; /* Prevent flex items from wrapping to the next line */
+   width: 75%; /* Use 100% width to ensure they stay on the same line */
+   /* margin: 0 auto; */
+   padding: 10px;
+   min-width: 200px;
+   justify-content: space-between; /* Space evenly between elements */
    border: solid black;
    padding: 10px;
-   
+   margin: 0 auto;
+   margin-top: 200px;
+}
+
+.input input {
+   width: 30%; /* Adjust this percentage based on your layout */
+   flex: 1; /* Distribute available space equally among input fields */
+   margin-right: 10px;
 }
 
 .submit button {
