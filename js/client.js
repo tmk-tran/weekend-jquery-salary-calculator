@@ -7,8 +7,9 @@ let monthlyCosts = 0; // global
 function onReady() {
   console.log("in onReady");
   // Wire up our click handlers
-  // An add Button
+  
   $("#addEmployee").on("click", function () {
+   console.log( 'you clicked submit!' );
     const firstName = $("#firstName").val();
     const lastName = $("#lastName").val();
     const id = $("#id").val();
@@ -65,12 +66,12 @@ function onReady() {
     clearFields();
   });
 
-  // Delete Button
+  // Delete button event handlers
   $('#employees').on('click', '.delete', function () { // which elements inside #employees should trigger the event handler when clicked
-   
+      
       const $employee = $(this).closest('.employee'); // find the closest ancestor element with the class 'employee'
 
-      const salaryCount = parseFloat($employee.data('salary')); // Retrieve the salary from the data-salary attribute
+      const salaryCount = parseFloat($employee.data('salary')); // retrieve the salary from the data-salary attribute we set in <li class> above ^^
 
       const monthlyCost = salaryCount / 12; // calculate the monthly cost by dividing the annual salary by 12
 
@@ -78,18 +79,18 @@ function onReady() {
 
       $employee.remove(); // remove the employee entry
 
-      updateCosts();
+      updateCosts(); // update our monthlyCosts
   });
 
   // Update monthly cost total
   function updateCosts() {
     console.log("in updateCosts");
-    $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID totalCosts
+    $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID totalCosts, fix to 2 decimal places
 
-    if (monthlyCosts > 20000) {
-      $("#totalCosts").addClass("high-cost");
+    if (monthlyCosts > 20000) { // if monthly costs are higher than 20000
+      $("#totalCosts").addClass("high-cost"); // created a 'high-cost' class for CSS style
     } else {
-      $("#totalCosts").removeClass("high-cost");
+      $("#totalCosts").removeClass("high-cost"); // less than 20000, remove the color attribute
     }
   }
 
@@ -102,19 +103,3 @@ function onReady() {
     $("#annualSalary").val('');
   }
 }
-
-// ~~~~~~~~~Extra/ Notes Below~~~~~~~~~~~
-
-
-   
-   // add event.disable here to prevent page loading when button clicked
-
-
-
-
-
-   // Update student count
-   // studentCount += Number(cohortCount);
-   // $('#totalStudents').text(studentCount);
-
-
