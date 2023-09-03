@@ -18,4 +18,9 @@ Your project description goes here. What problem did you solve? How did you solv
 
 
 
+- round corners of monthly costs
+- change fonts of text at top
+- round corners of appended table data
+
+
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

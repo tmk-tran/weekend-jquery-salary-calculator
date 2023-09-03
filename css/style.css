@@ -159,6 +159,7 @@ ul.employees td {
   margin-top: -3px;
   background-color: ghostwhite;
   border: solid black;
+  border-width: 0 1px 0 1px; /* to remove top and bottom borders */
 }
 
 .row4 {
