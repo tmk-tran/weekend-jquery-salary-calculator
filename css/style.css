@@ -85,8 +85,8 @@ ul {
 
 ul#employees .employee button.delete {
   /* specifically targets <ul> to <li> to <button> to <button class 'delete'> */
-  background-color: black;
-  color: white;
+  background-color: ghostwhite;
+  color: black;
   margin-top: 5px auto;
 }
 
@@ -103,7 +103,7 @@ li.employee {
   width: 24%;
   margin: 25px 5px 0 0;
   border: 3px solid black;
-  background-color: white;
+  background-color: black;
   padding: 2% 3%;
 }
 
