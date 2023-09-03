@@ -118,9 +118,9 @@ ul.employees td {
 
 /* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
 
-.colors1,
-.colors2,
-.colors3 {
+.row1,
+.row2,
+.row3 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -129,22 +129,10 @@ ul.employees td {
   border: solid black;
 }
 
-.red,
-.blue,
-.green,
-.yellow,
-.purple {
-  display: inline-block;
-  height: 65px;
-  width: 65px;
-  margin: 20px;
-  border: solid black;
-}
-
 .number1,
 .number4,
 .number7 {
-  background-color: red;
+  background-color:black;
 }
 
 .number2,
@@ -171,8 +159,8 @@ ul.employees td {
 }
 
 .purpleB {
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
   margin: 20px;
   border: solid black;
   background-color: black;
@@ -184,9 +172,9 @@ ul.employees td {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 16px;
-  width: 50px;
-  margin: 7px 5px;
+  height: 20px;
+  width: 74px;
+  margin: 1px -2px;
   border: solid black;
   background-color: ghostwhite;
 }
@@ -199,9 +187,10 @@ ul.employees td {
   align-items: center;
   background-color: ghostwhite;
   /* font-family: Chalkduster; */
-  /* padding: 5px; */
-  margin: 7px 5px;
+  margin: 5px 0px 5px -2px;
   border: solid black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
@@ -211,8 +200,8 @@ ul.employees td {
 .number3,
 .dot {
   display: inline-block;
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
   margin: 20px;
   border: solid black;
 }
@@ -223,8 +212,8 @@ ul.employees td {
 .plus,
 .multiply {
   display: inline-block;
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
   margin: 20px;
   border: solid black;
 }
@@ -235,8 +224,8 @@ ul.employees td {
 .subtract,
 .division {
   display: inline-block;
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
   margin: 20px;
   border: solid black;
 }
@@ -257,8 +246,8 @@ button {
 #three,
 #decimal {
   margin: 5px 5px; /* top/bottom , left/right */
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   font-size: 24px;
 }
 
@@ -270,8 +259,8 @@ button {
 #add,
 #times {
   margin: 5px 5px; /* top/bottom , left/right */
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   font-size: 24px;
 }
 
@@ -283,7 +272,7 @@ button {
 #minus,
 #divide {
   margin: 5px 5px; /* top/bottom , left/right */
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   font-size: 24px;
 }
