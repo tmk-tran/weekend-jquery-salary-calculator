@@ -1,6 +1,6 @@
 body {
   background-color: rgba(80, 80, 80, 0.25);
-  background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png);
+  /* background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png); */
   background-size: 100% auto; /* fills screen and maintains ratio */
   background-repeat: no-repeat; /* stop repeat */
   color: black;
@@ -20,6 +20,7 @@ h4 {
 h1 {
   background-color: ghostwhite;
   text-align: center;
+  border: solid black;
 }
 
 h2 {
@@ -29,6 +30,8 @@ h2 {
 
 h3 {
   border: solid black;
+  height: 36px;
+  background-color: ghostwhite;
 }
 
 h4 {
@@ -120,42 +123,47 @@ ul.employees td {
 
 .row1,
 .row2,
-.row3 {
+.row3,
+.row4 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   width: 75%;
-  background-color: aliceblue;
+  background-color: ghostwhite;
   border: solid black;
+}
+
+.row4 {
+   height: 75px;
 }
 
 .number1,
 .number4,
 .number7 {
-  background-color:black;
+   background-color: black;
 }
 
 .number2,
 .number5,
 .number8 {
-  background-color: yellow;
+  background-color: black;
 }
 
 .number3,
 .number6,
 .number9 {
-  background-color: blue;
+  background-color: black;
 }
 
 .dot,
 .plus,
 .subtract {
-  background-color: green;
+  background-color: black;
 }
 
 .multiply,
 .division {
-  background-color: blueviolet;
+  background-color: black;
 }
 
 .purpleB {
@@ -186,11 +194,11 @@ ul.employees td {
   justify-content: center;
   align-items: center;
   background-color: ghostwhite;
-  /* font-family: Chalkduster; */
   margin: 5px 0px 5px -2px;
   border: solid black;
   font-size: 18px;
   font-weight: bold;
+  color:red;
 }
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
@@ -248,7 +256,7 @@ button {
   margin: 5px 5px; /* top/bottom , left/right */
   height: 65px;
   width: 65px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /* ~~~~~~~~~~ 4,5,6, +, x ~~~~~~~~~~ */
@@ -261,7 +269,7 @@ button {
   margin: 5px 5px; /* top/bottom , left/right */
   height: 65px;
   width: 65px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /* 7,8,9, -, division */
@@ -274,5 +282,5 @@ button {
   margin: 5px 5px; /* top/bottom , left/right */
   height: 65px;
   width: 65px;
-  font-size: 24px;
+  font-size: 30px;
 }
