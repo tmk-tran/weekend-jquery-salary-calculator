@@ -59,7 +59,6 @@ ul {
   margin-top: 10px;
 }
 
-
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
 
 ul#employees .employee button.delete {
@@ -68,7 +67,6 @@ ul#employees .employee button.delete {
   color: white;
   margin-top: 5px auto;
 }
-
 
 /* ~~~~~~~~~~ Appended employee table ~~~~~~~~~~ */
 
@@ -95,7 +93,6 @@ ul.employees td {
   padding: 1%;
 }
 
-
 /* ~~~~~~~~~~ Monthly cost section ~~~~~~~~~~ */
 
 #totalCosts {
@@ -109,7 +106,6 @@ ul.employees td {
   background-color: red;
   color: white;
 }
-
 
 /* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
 
@@ -167,31 +163,32 @@ ul.employees td {
   border: solid black;
 }
 
-.purpleB button {
-   /* style for submit/'equals' button */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: solid black;
-   /* padding: 5px; */
-   margin: 2px 2px;
- }
-
-
 /* ~~~~~~~~~~ 'Equals' square style ~~~~~~~~~~ */
 
 .equal {
-   height: 24px;
-   width: 55px;
-   border: solid black;
-   background-color:ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 50px;
+  margin: 7px 5px;
+  border: solid black;
+  background-color: ghostwhite;
 }
-
 
 /* ~~~~~~~~~~ Submit button style ~~~~~~~~~~ */
 
+.purpleB button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  /* padding: 5px; */
+  margin: 7px 5px;
+}
+
 .input input[type="text"] {
-   width: 75%; /* adjust this for size */
-   flex: 1; /* distributes available space equally among input fields */
-   margin-right: 10px;
- }
+  width: 75%; /* adjust this for size */
+  flex: 1; /* distributes available space equally among input fields */
+  margin-right: 10px;
+}
