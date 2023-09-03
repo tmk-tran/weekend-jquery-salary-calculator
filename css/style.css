@@ -50,7 +50,7 @@ ul {
 .input {
   display: flex; /* make the children of .input flex items */
   flex-wrap: nowrap; /* prevent flex items from wrapping to the next line */
-  width: 73%; /* use 100% width to ensure they stay on the same line */
+  width: 73%; /* match width of other sections */
   padding: 20px;
   min-width: 200px;
   justify-content: flex-start; /* start from the left edge */
@@ -79,6 +79,7 @@ ul#employees .employee button.delete {
 ul#employees .employee table {
   /* specifically targets <li> items under the <ul> with the id 'employees' */
   background-color: antiquewhite;
+  
 }
 
 li.employee {
