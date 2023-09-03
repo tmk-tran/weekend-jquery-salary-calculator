@@ -62,7 +62,7 @@ ul {
    border: solid black;
    padding: 10px;
    margin: 0 auto;
-   margin-top: 50px;
+   margin-top: 10px;
 }
 
 .input input {
@@ -127,8 +127,8 @@ ul.employees td {
 .yellow,
 .purple {
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   margin: 10px;
   border: solid black;
 }
