@@ -1,6 +1,7 @@
 body {
-  background-color: rgba(80, 80, 80, 0.25);
+  /* background-color: rgba(80, 80, 80, 0.25); */
   /* background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png); */
+  background-color: lightslategray;
   background-size: 100% auto; /* fills screen and maintains ratio */
   background-repeat: no-repeat; /* stop repeat */
   color: black;
@@ -11,7 +12,7 @@ h1,
 h2,
 h3,
 h4 {
-  width: 75%;
+  width: 74%;
   padding: 10px;
   margin: 0 auto;
   min-width: 200px;
@@ -21,11 +22,18 @@ h1 {
   background-color: ghostwhite;
   text-align: center;
   border: solid black;
+  border-radius: 20px 20px 0 0; /* rounded corners at top */
 }
 
 h2 {
-  text-align: right;
+  text-align: center;
   border: solid black;
+  background-color: black;
+}
+
+h2.info {
+  /* targeting the class 'info' in h2 */
+  color: ghostwhite;
 }
 
 h3 {
@@ -37,7 +45,7 @@ h3 {
 h4 {
   border: solid black;
   font-size: 24px;
-  background-color:darkturquoise;
+  background-color: darkturquoise;
 }
 
 h4 #totalCosts {
@@ -55,15 +63,17 @@ ul {
 .input {
   display: flex; /* make the children of .input flex items */
   flex-wrap: nowrap; /* prevent flex items from wrapping to the next line */
-  width: 73%; /* match width of other sections */
+  width: 72%; /* match width of other sections */
   padding: 20px;
   min-width: 200px;
   justify-content: flex-start; /* start from the left edge */
   border: solid black;
-  margin: 10px auto 10px; /* order: ~Top~, ~Right~, ~Bottom~, ~Left~ */
+  margin: 0 auto; /* order: ~Top~, ~Right~, ~Bottom~, ~Left~ */
+  background-color: black;
 }
 
 .input input[type="text"] {
+  /* targets the input fields */
   width: 75%; /* adjust this for size */
   flex: 1; /* distributes available space equally among input fields */
   margin-right: 10px;
@@ -130,6 +140,7 @@ ul.employees td {
   height: 36px;
   background-color: ghostwhite;
   border: solid black;
+  font-size: 26px;
 }
 
 /* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
@@ -142,12 +153,19 @@ ul.employees td {
   justify-content: center;
   margin: 0 auto;
   width: 75%;
+  margin-top: -3px;
   background-color: ghostwhite;
   border: solid black;
 }
 
 .row4 {
   height: 75px;
+  font-size: 26px;
+  border-radius: 0 0 25px 25px; /* rounded corners at bottom */
+}
+
+.bottom {
+   margin-top: 15px;
 }
 
 .number1,
@@ -215,8 +233,8 @@ ul.employees td {
 }
 
 .purpleB button:hover {
-   background-color: red;
-   color:ghostwhite;
+  background-color: red;
+  color: ghostwhite;
 }
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
