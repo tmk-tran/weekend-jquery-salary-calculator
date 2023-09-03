@@ -7,37 +7,33 @@ body{
     min-width: 200px;
 }
 
+h1, h2, h3, h4 {
+   width: 75%;
+   padding: 10px;
+}
+
 h1 {
    background-color: ghostwhite;
    text-align: center;
-   width: 75%;
    margin: 0 auto;
-   padding: 10px;
    min-width: 200px;   
 }
 
 h2 {
    text-align: right;
-   width: 75%;
    margin: 0 auto;
-   padding: 10px;
    min-width: 200px;
    border: solid black;
 }
 
 h3 {
-   width: 75%;
    margin: 0 auto;
-   padding: 10px;
    min-width: 200px;
    border: solid black;
 }
 
 h4 {
-   /* text-align: right; */
-   width: 75%;
    margin: 0 auto;
-   padding: 10px;
    min-width: 200px;
    border: solid black;
    font-size: 18px;
@@ -119,6 +115,12 @@ ul.employees td {
 .high-cost {
    background-color: red;
    color:white;
+}
+
+/* ~~~~~~~~~~Color styling~~~~~~~~~~ */
+
+.colors1, .colors2, .colors3, .colors4 {
+   background-color: aliceblue;
 }
 
 .red,
