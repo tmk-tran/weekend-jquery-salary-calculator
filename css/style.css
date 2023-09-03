@@ -79,6 +79,7 @@ ul {
   flex: 1; /* distributes available space equally among input fields */
   margin-right: 10px;
   height: 50px;
+  font-size: 22px;
 }
 
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
