@@ -6,8 +6,8 @@ let monthlyCosts = 0; // global
 
 function onReady() {
   console.log("in onReady");
-  // Wire up our click handlers
   
+  // Wire up click handlers
   $("#addEmployee").on("click", function () {
    console.log( 'you clicked submit!' );
     const firstName = $("#firstName").val();
