@@ -37,6 +37,7 @@ h3 {
 h4 {
   border: solid black;
   font-size: 24px;
+  background-color:darkturquoise;
 }
 
 h4 #totalCosts {
@@ -46,7 +47,7 @@ h4 #totalCosts {
 
 ul {
   padding: 0;
-  color: lawngreen;
+  color: limegreen;
 }
 
 /* ~~~~~~~~~~ Input section ~~~~~~~~~~ */
@@ -119,6 +120,18 @@ ul.employees td {
   color: white;
 }
 
+/* ~~~~~~~~~~ Row above input section ~~~~~~~~~~ */
+
+.row5 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 75%;
+  height: 36px;
+  background-color: ghostwhite;
+  border: solid black;
+}
+
 /* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
 
 .row1,
@@ -134,13 +147,13 @@ ul.employees td {
 }
 
 .row4 {
-   height: 75px;
+  height: 75px;
 }
 
 .number1,
 .number4,
 .number7 {
-   background-color: black;
+  background-color: black;
 }
 
 .number2,
@@ -181,10 +194,10 @@ ul.employees td {
   justify-content: center;
   align-items: center;
   height: 20px;
-  width: 74px;
-  margin: 1px -2px;
+  width: 70px;
+  margin: 1px 0px;
   border: solid black;
-  background-color: ghostwhite;
+  background-color: darkgrey;
 }
 
 /* ~~~~~~~~~~ Submit button style ~~~~~~~~~~ */
@@ -193,12 +206,17 @@ ul.employees td {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ghostwhite;
-  margin: 5px 0px 5px -2px;
+  background-color: darkgrey;
+  margin: 7px 0px 2px 0px;
   border: solid black;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
-  color:red;
+  color: black;
+}
+
+.purpleB button:hover {
+   background-color: red;
+   color:ghostwhite;
 }
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
@@ -244,7 +262,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ghostwhite;
+  background-color: darkgray;
   margin: 7px 5px; /* top/bottom , left/right */
   border: solid black;
 }
