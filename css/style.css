@@ -34,6 +34,7 @@ h2 {
 h2.info {
   /* targeting the class 'info' in h2 */
   color: ghostwhite;
+  font-family: Chalkduster;
 }
 
 h3 {
