@@ -13,4 +13,7 @@ Once the employee is deleted, update the Total Monthly Cost section on the pag
 
 Your project description goes here. What problem did you solve? How did you solve it?
 
+- Some of the problems I solved were getting the layout of my elements to work. 
+- I helped to solve this by using borders around everything to visualize, and also added an image for reference to get a model of how I wanted the elements to be arranged.
+
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
