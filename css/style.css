@@ -33,7 +33,7 @@ h3 {
 
 h4 {
   border: solid black;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h4 #totalCosts {
@@ -48,23 +48,17 @@ ul {
 /* ~~~~~~~~~~ Input section ~~~~~~~~~~ */
 
 .input {
-  display: flex; /* Make the children of .input flex items */
-  flex-wrap: nowrap; /* Prevent flex items from wrapping to the next line */
-  width: 75%; /* Use 100% width to ensure they stay on the same line */
-  padding: 10px;
+  display: flex; /* make the children of .input flex items */
+  flex-wrap: nowrap; /* prevent flex items from wrapping to the next line */
+  width: 75%; /* use 100% width to ensure they stay on the same line */
+  padding: 20px;
   min-width: 200px;
-  justify-content: flex-start; /* Start from the left edge */
+  justify-content: flex-start; /* start from the left edge */
   border: solid black;
-  padding: 10px;
   margin: 0 auto;
   margin-top: 10px;
 }
 
-.input input {
-  width: 30%; /* Adjust this percentage based on your layout */
-  flex: 1; /* Distribute available space equally among input fields */
-  margin-right: 10px;
-}
 
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
 
@@ -74,6 +68,7 @@ ul#employees .employee button.delete {
   color: white;
   margin-top: 5px auto;
 }
+
 
 /* ~~~~~~~~~~ Appended employee table ~~~~~~~~~~ */
 
@@ -100,6 +95,7 @@ ul.employees td {
   padding: 1%;
 }
 
+
 /* ~~~~~~~~~~ Monthly cost section ~~~~~~~~~~ */
 
 #totalCosts {
@@ -113,6 +109,7 @@ ul.employees td {
   background-color: red;
   color: white;
 }
+
 
 /* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
 
@@ -170,9 +167,31 @@ ul.employees td {
   border: solid black;
 }
 
-.purpleB button { /* style for submit/'equals' button */
+.purpleB button {
+   /* style for submit/'equals' button */
    display: flex;
+   justify-content: center;
+   align-items: center;
    border: solid black;
-   padding: 10px;
+   /* padding: 5px; */
    margin: 2px 2px;
+ }
+
+
+/* ~~~~~~~~~~ 'Equals' square style ~~~~~~~~~~ */
+
+.equal {
+   height: 24px;
+   width: 55px;
+   border: solid black;
+   background-color:ghostwhite;
+}
+
+
+/* ~~~~~~~~~~ Submit button style ~~~~~~~~~~ */
+
+.input input[type="text"] {
+   width: 75%; /* adjust this for size */
+   flex: 1; /* distributes available space equally among input fields */
+   margin-right: 10px;
  }
