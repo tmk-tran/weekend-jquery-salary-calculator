@@ -16,17 +16,17 @@ function onReady() {
     const title = $("#title").val();
     const annualSalary = parseFloat($("#annualSalary").val());
 
-    if ( // conditions for input fields
-      !firstName ||
-      !lastName ||
-      !id ||
-      !title ||
-      isNaN(annualSalary) ||
-      annualSalary <= 0
-    ) {
-      alert("Please fill all fields with proper values");
-      return;
-    }
+   //  if ( // conditions for input fields
+   //    !firstName ||
+   //    !lastName ||
+   //    !id ||
+   //    !title ||
+   //    isNaN(annualSalary) ||
+   //    annualSalary <= 0
+   //  ) {
+   //    alert("Please fill all fields with proper values");
+   //    return;
+   //  }
 
     const monthlyCost = annualSalary / 12;
     monthlyCosts += monthlyCost;

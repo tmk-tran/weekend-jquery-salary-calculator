@@ -1,9 +1,8 @@
 body{
-    background-color:gray;
+    background-color: rgba(80, 80, 80, 0.5);
     background-image: url(https://purepng.com/public/uploads/large/purepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png);
     background-size: 100% auto; /* fills screen and maintains ratio */
     background-repeat: no-repeat; /* stop repeat */
-    /* background color: rgba(255, 255, 255, 0.5); */
     color: black;
     min-width: 200px;
 }
@@ -56,7 +55,7 @@ ul {
    border: solid black;
    padding: 10px;
    margin: 0 auto;
-   margin-top: 200px;
+   margin-top: 150px;
 }
 
 .input input {
@@ -73,21 +72,26 @@ ul {
    margin-left: auto;  /* Push to the right edge */
 }
 
-ul#employees .employee table { /* specifically targets <li> items under the ul with the ID employees */
+ul#employees .employee button.delete { /* specifically targets <ul> to <li> to <button> to <button class 'delete'> */
+   background-color: black;
+   color: white;
+}
+
+ul#employees .employee table { /* specifically targets <li> items under the <ul> with the id 'employees' */
    background-color: antiquewhite;
 }
  
 li.employee {
    /* list-style: none; */
-   /* box-sizing: border-box; */
+   box-sizing: border-box;
    display: inline-block;
-   /* width: 24%; */
+   width: 24%;
    /* min-width: 200px; for smaller screens */
    /* margin-right: 1%; */
    border: 3px solid black;
-   /* background-color: white; */
+   background-color: white;
    /* color: black; */
-   /* padding: 2% 3%; */
+   padding: 2% 3%;
    /* border-radius: 5px;  */
 }
 ul.employees table {
