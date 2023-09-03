@@ -45,6 +45,8 @@ ul {
   padding: 0;
 }
 
+/* ~~~~~~~~~~ Input section ~~~~~~~~~~ */
+
 .input {
   display: flex; /* Make the children of .input flex items */
   flex-wrap: nowrap; /* Prevent flex items from wrapping to the next line */
@@ -64,12 +66,16 @@ ul {
   margin-right: 10px;
 }
 
+/* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
+
 ul#employees .employee button.delete {
   /* specifically targets <ul> to <li> to <button> to <button class 'delete'> */
   background-color: black;
   color: white;
   margin-top: 5px auto;
 }
+
+/* ~~~~~~~~~~ Appended employee table ~~~~~~~~~~ */
 
 ul#employees .employee table {
   /* specifically targets <li> items under the <ul> with the id 'employees' */
@@ -94,6 +100,8 @@ ul.employees td {
   padding: 1%;
 }
 
+/* ~~~~~~~~~~ Monthly cost section ~~~~~~~~~~ */
+
 #totalCosts {
   font-size: 18px;
   font-weight: bold;
@@ -106,12 +114,11 @@ ul.employees td {
   color: white;
 }
 
-/* ~~~~~~~~~~Color styling~~~~~~~~~~ */
+/* ~~~~~~~~~~ Color style ~~~~~~~~~~ */
 
 .colors1,
 .colors2,
-.colors3,
-.colors4 {
+.colors3 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -119,8 +126,6 @@ ul.employees td {
   background-color: aliceblue;
   border: solid black;
 }
-
-
 
 .red,
 .blue,
