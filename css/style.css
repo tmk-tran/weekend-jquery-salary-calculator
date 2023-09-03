@@ -43,6 +43,7 @@ h4 #totalCosts {
 
 ul {
   padding: 0;
+  color:lawngreen;
 }
 
 /* ~~~~~~~~~~ Input section ~~~~~~~~~~ */
@@ -55,7 +56,7 @@ ul {
   min-width: 200px;
   justify-content: flex-start; /* start from the left edge */
   border: solid black;
-  margin: 10px auto 1px; /* order: ~Top~, ~Right~, ~Bottom~, ~Left~ */
+  margin: 10px auto 10px; /* order: ~Top~, ~Right~, ~Bottom~, ~Left~ */
 }
 
 .input input[type="text"] {
@@ -78,8 +79,8 @@ ul#employees .employee button.delete {
 
 ul#employees .employee table {
   /* specifically targets <li> items under the <ul> with the id 'employees' */
-  background-color: antiquewhite;
-  
+  background-color: black;
+
 }
 
 li.employee {
@@ -91,11 +92,13 @@ li.employee {
   background-color: white;
   padding: 2% 3%;
 }
+
 ul.employees table {
   width: 100%;
   background-color: antiquewhite;
   /* border: solid black; */
 }
+
 ul.employees td {
   padding: 1%;
 }
