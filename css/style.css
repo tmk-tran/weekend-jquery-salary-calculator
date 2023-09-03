@@ -23,6 +23,7 @@ h1 {
   text-align: center;
   border: solid black;
   border-radius: 20px 20px 0 0; /* rounded corners at top */
+  font-family: Andale Mono;
 }
 
 h2 {
@@ -79,7 +80,7 @@ ul {
   flex: 1; /* distributes available space equally among input fields */
   margin-right: 10px;
   height: 50px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
