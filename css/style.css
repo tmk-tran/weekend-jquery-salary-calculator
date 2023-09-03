@@ -43,7 +43,7 @@ h4 #totalCosts {
 
 ul {
   padding: 0;
-  color:lawngreen;
+  color: lawngreen;
 }
 
 /* ~~~~~~~~~~ Input section ~~~~~~~~~~ */
@@ -60,10 +60,10 @@ ul {
 }
 
 .input input[type="text"] {
-   width: 75%; /* adjust this for size */
-   flex: 1; /* distributes available space equally among input fields */
-   margin-right: 10px;
-   height: 50px;
+  width: 75%; /* adjust this for size */
+  flex: 1; /* distributes available space equally among input fields */
+  margin-right: 10px;
+  height: 50px;
 }
 
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
@@ -80,7 +80,6 @@ ul#employees .employee button.delete {
 ul#employees .employee table {
   /* specifically targets <li> items under the <ul> with the id 'employees' */
   background-color: black;
-
 }
 
 li.employee {
@@ -142,23 +141,32 @@ ul.employees td {
   border: solid black;
 }
 
-.red, .number1 {
+.number1,
+.number4,
+.number7 {
   background-color: red;
 }
 
-.yellow, .number2 {
+.number2,
+.number5,
+.number8 {
   background-color: yellow;
 }
 
-.blue, .number3 {
+.number3,
+.number6,
+.number9 {
   background-color: blue;
 }
 
-.green, .dot {
+.dot,
+.plus,
+.subtract {
   background-color: green;
 }
 
-.purple, .purpleB {
+.multiply,
+.division {
   background-color: blueviolet;
 }
 
@@ -167,6 +175,7 @@ ul.employees td {
   width: 65px;
   margin: 20px;
   border: solid black;
+  background-color: black;
 }
 
 /* ~~~~~~~~~~ 'Equals' square style ~~~~~~~~~~ */
@@ -197,30 +206,84 @@ ul.employees td {
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
 
-.number1, .number2, .number3, .dot {
-   display: inline-block;
-   height: 65px;
-   width: 65px;
-   margin: 20px;
-   border: solid black;
+.number1,
+.number2,
+.number3,
+.dot {
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  margin: 20px;
+  border: solid black;
+}
+
+.number4,
+.number5,
+.number6,
+.plus,
+.multiply {
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  margin: 20px;
+  border: solid black;
+}
+
+.number7,
+.number8,
+.number9,
+.subtract,
+.division {
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  margin: 20px;
+  border: solid black;
 }
 
 /* ~~~~~~~~~~ 1,2,3, and . ~~~~~~~~~~ */
 
 button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: ghostwhite;
-   /* padding: 5px; */
-   margin: 7px 5px; /* adjust for size later */
-   border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite;
+  margin: 7px 5px; /* top/bottom , left/right */
+  border: solid black;
+}
+
+#one,
+#two,
+#three,
+#decimal {
+  margin: 5px 5px; /* top/bottom , left/right */
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
 }
 
 /* ~~~~~~~~~~ 4,5,6, +, x ~~~~~~~~~~ */
 
-
+#four,
+#five,
+#six,
+#add,
+#times {
+  margin: 5px 5px; /* top/bottom , left/right */
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
+}
 
 /* 7,8,9, -, division */
 
-
+#seven,
+#eight,
+#nine,
+#minus,
+#divide {
+  margin: 5px 5px; /* top/bottom , left/right */
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
+}
