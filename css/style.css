@@ -34,11 +34,18 @@ h3 {
 }
 
 h4 {
+   /* text-align: right; */
    width: 75%;
    margin: 0 auto;
    padding: 10px;
    min-width: 200px;
    border: solid black;
+   font-size: 18px;
+}
+
+h4 #totalCosts {
+   display: flex;
+   justify-content: flex-end;
 }
 
 ul {
