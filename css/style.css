@@ -132,27 +132,23 @@ ul.employees td {
   border: solid black;
 }
 
-.red {
+.red, .number1 {
   background-color: red;
 }
 
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
-.yellow {
+.yellow, .number2 {
   background-color: yellow;
 }
 
-.purple {
-  background-color: blueviolet;
+.blue, .number3 {
+  background-color: blue;
 }
 
-.purpleB {
+.green, .dot {
+  background-color: green;
+}
+
+.purple, .purpleB {
   background-color: blueviolet;
 }
 
@@ -182,9 +178,11 @@ ul.employees td {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid black;
+  background-color: ghostwhite;
+  /* font-family: Chalkduster; */
   /* padding: 5px; */
   margin: 7px 5px;
+  border: solid black;
 }
 
 .input input[type="text"] {
@@ -192,3 +190,14 @@ ul.employees td {
   flex: 1; /* distributes available space equally among input fields */
   margin-right: 10px;
 }
+
+/* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
+
+.number1, .number2, .number3, .dot {
+   display: inline-block;
+   height: 65px;
+   width: 65px;
+   margin: 20px;
+   border: solid black;
+}
+
