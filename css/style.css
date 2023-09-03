@@ -50,13 +50,19 @@ ul {
 .input {
   display: flex; /* make the children of .input flex items */
   flex-wrap: nowrap; /* prevent flex items from wrapping to the next line */
-  width: 75%; /* use 100% width to ensure they stay on the same line */
+  width: 73%; /* use 100% width to ensure they stay on the same line */
   padding: 20px;
   min-width: 200px;
   justify-content: flex-start; /* start from the left edge */
   border: solid black;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px auto 1px; /* order: ~Top~, ~Right~, ~Bottom~, ~Left~ */
+}
+
+.input input[type="text"] {
+   width: 75%; /* adjust this for size */
+   flex: 1; /* distributes available space equally among input fields */
+   margin-right: 10px;
+   height: 50px;
 }
 
 /* ~~~~~~~~~~ Delete button ~~~~~~~~~~ */
@@ -183,12 +189,6 @@ ul.employees td {
   /* padding: 5px; */
   margin: 7px 5px;
   border: solid black;
-}
-
-.input input[type="text"] {
-  width: 75%; /* adjust this for size */
-  flex: 1; /* distributes available space equally among input fields */
-  margin-right: 10px;
 }
 
 /* ~~~~~~~~~~ Number squares style ~~~~~~~~~~ */
