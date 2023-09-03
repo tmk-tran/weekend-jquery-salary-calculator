@@ -64,17 +64,8 @@ ul {
   margin-right: 10px;
 }
 
-.submit {
-  display: flex;
-  position: absolute;
-  /* top: 0; */
-  left: 720px;
-  /* right: 0; */
-  /* bottom: 0; */
-  border: solid black;
-}
 
-.submit button {
+.purpleB button {
   display: flex;
   border: solid black;
   padding: 10px;
