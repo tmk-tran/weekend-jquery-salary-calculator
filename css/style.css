@@ -214,8 +214,8 @@ ul.employees td {
   justify-content: center;
   align-items: center;
   height: 20px;
-  width: 70px;
-  margin: 1px 0px;
+  width: 62px;
+  margin: 0px 3px;
   border: solid black;
   background-color: darkgrey;
 }
@@ -227,11 +227,12 @@ ul.employees td {
   justify-content: center;
   align-items: center;
   background-color: darkgrey;
-  margin: 7px 0px 2px 0px;
+  margin: 6px 0px 7px 3px;
   border: solid black;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   color: black;
+  width: 68px;
 }
 
 .purpleB button:hover {
