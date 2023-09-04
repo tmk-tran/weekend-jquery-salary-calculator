@@ -53,6 +53,7 @@ h4 {
 h4 #totalCosts {
   display: flex;
   justify-content: flex-end;
+  font-size: 36px;
 }
 
 ul {
