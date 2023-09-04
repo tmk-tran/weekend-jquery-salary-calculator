@@ -71,7 +71,7 @@ function onReady() {
       
       const $employee = $(this).closest('.employee'); // find the closest ancestor element with the class 'employee'
 
-      const salaryCount = parseFloat($employee.data('salary')); // retrieve the salary from the data-salary attribute we set in <li class> above ^^
+      const salaryCount = parseFloat($employee.data('salary')); // retrieve the 'salary' from the data-salary attribute we set in <li class> above ^^
 
       const monthlyCost = salaryCount / 12; // calculate the monthly cost by dividing the annual salary by 12
 
