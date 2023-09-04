@@ -85,7 +85,7 @@ function onReady() {
   // Update monthlyCosts total
   function updateCosts() {
     console.log("in updateCosts");
-    $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID totalCosts, fix to 2 decimal places
+    $("#totalCosts").text("$" + monthlyCosts.toFixed(2)); // update text content using ID 'totalCosts', then fix to 2 decimal places
 
     if (monthlyCosts > 20000) { // if monthly costs are higher than 20000
       $("#totalCosts").addClass("high-cost"); // created a 'high-cost' class for CSS style
