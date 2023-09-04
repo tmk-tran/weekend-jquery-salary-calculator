@@ -13,11 +13,11 @@ Once the employee is deleted, update the Total Monthly Cost section on the pag
 
 Your project description goes here. What problem did you solve? How did you solve it?
 
-- Some of the problems I solved were getting the layout of my elements to work, learning how to target specific elements (walking the DOM). Additionally, making little changes using flexbox and styles to rearrange my page
-- I helped to solve this by using borders around everything to visualize, and also added an image for reference to get a model of how I wanted the elements to be arranged. The notes from lecture and study really assisted me in applying the same concept to this project!
+- Some of the problems I solved were getting the layout of my elements to work, learning how to target specific elements (walking the DOM). Additionally, making little changes using flexbox and styles to rearrange my page to look like a calculator
+- I helped to solve this by using borders around everything to visualize, and also added an image for reference to get a model of how I wanted the elements to be arranged. The notes from lecture and study really assisted me in applying the same concept to this project! Additionally, using 'inspect elements' to make adjustments to layout helped a lot.
 
 
-
+TODO:
 - round corners of monthly costs
 - change fonts of text at top
 - round corners of appended table data
